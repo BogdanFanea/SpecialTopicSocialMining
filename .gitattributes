@@ -1,6 +1,0 @@
-# Keep submission checksums valid by preserving original file bytes.
-* -text
-*.pt binary
-*.pdf binary
-*.pptx binary
-*.zip binary
