@@ -1,0 +1,53 @@
+{
+  "seeds": [42, 43, 44],
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rates": [0.0001, 0.001, 0.01],
+    "weight_decays": [0.0, 0.01],
+    "batch_size": 256,
+    "epochs": 50
+  },
+  "test_annotations": {
+    "url": "https://huggingface.co/datasets/neuralcatcher/hateful_memes/resolve/d201c488dc7024623d1ecbcc987b3f132c4c2e12/test_seen.jsonl",
+    "revision": "d201c488dc7024623d1ecbcc987b3f132c4c2e12",
+    "sha256": "dd0d387bacd67ce4db39fcfd805a0b4b9e10fe0feaafc3b189b41c4ef2e36a16",
+    "description": "Public-mirror labels; official ground-truth provenance unconfirmed.",
+    "research_reference": "https://github.com/YiLunLee/missing_aware_prompts/blob/9aa538159f4623de1936d25daee880ec47c062be/DATA.md"
+  },
+  "encoders": {
+    "resnet50": {
+      "baseline": "Image A", "modality": "image", "dimension": 2048,
+      "checkpoint": "torchvision.models.ResNet50_Weights.IMAGENET1K_V2",
+      "weights_url": "https://download.pytorch.org/models/resnet50-11ad3fa6.pth",
+      "pooling": "Global average pooling before the original classification layer",
+      "preprocessing": "RGB; bilinear resize shorter edge to 232, center crop 224; ImageNet mean/std",
+      "source": "https://docs.pytorch.org/vision/0.19/models/generated/torchvision.models.resnet50.html"
+    },
+    "clip": {
+      "baseline": "Image B", "modality": "image", "dimension": 512,
+      "checkpoint": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "pooling": "Pooled vision CLS token followed by pretrained visual projection",
+      "preprocessing": "RGB; checkpoint CLIPImageProcessor: bicubic resize and center crop to 224; CLIP mean/std",
+      "source": "https://huggingface.co/openai/clip-vit-base-patch32"
+    },
+    "minilm": {
+      "baseline": "Text A", "modality": "text", "dimension": 384,
+      "checkpoint": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "max_length": 256,
+      "pooling": "Attention-mask mean pooling, including non-padding special tokens; L2 normalization",
+      "preprocessing": "Matching AutoTokenizer; dynamic padding; truncation at 256 tokens including special tokens",
+      "source": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+    },
+    "mpnet": {
+      "baseline": "Text B", "modality": "text", "dimension": 768,
+      "checkpoint": "sentence-transformers/all-mpnet-base-v2",
+      "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "max_length": 384,
+      "pooling": "Attention-mask mean pooling, including non-padding special tokens; L2 normalization",
+      "preprocessing": "Matching AutoTokenizer; dynamic padding; truncation at 384 tokens including special tokens",
+      "source": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2"
+    }
+  }
+}
