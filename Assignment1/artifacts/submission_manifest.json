@@ -1,11 +1,7 @@
 {
-  "README.md": {
-    "bytes": 13201,
-    "sha256": "256bcabd4fa8c6df4e394981717cc40fa85a1940c767deb6a0d5b46970edea88"
-  },
-  "artifacts/analysis.json": {
-    "bytes": 1829,
-    "sha256": "5839e777eb7abaeaef2d492ffe88a7fbf6b83db33a195b9f71dccd1d6cd0952f"
+  ".gitignore": {
+    "bytes": 99,
+    "sha256": "91ab5dc557ad5ac11313ca3e080cb751003c4ed8d8304d857ceec6afbaa6c14b"
   },
   "artifacts/checkpoints/clip/seed_42.pt": {
     "bytes": 8976,
@@ -78,22 +74,6 @@
   "artifacts/error_analysis.json": {
     "bytes": 3409,
     "sha256": "01aa9551c22b31af4041e7b3419f6bb71d96d134496f2d130c3ca0cefded371f"
-  },
-  "artifacts/metrics/clip.json": {
-    "bytes": 2493,
-    "sha256": "f756c7875093926dce0062796d6659e67fa7a1f2b0fd3769a1e5563577b4a2c1"
-  },
-  "artifacts/metrics/minilm.json": {
-    "bytes": 2573,
-    "sha256": "4105c7e3c052f3dd5c4e3d3735d4c0ba9ac05aac3d8db95cc97cb92cc84e1426"
-  },
-  "artifacts/metrics/mpnet.json": {
-    "bytes": 2587,
-    "sha256": "022ebb4b673add2d1adf93cf2ceb5262ad9ebd21320a4004d3ef2cada0e1acfb"
-  },
-  "artifacts/metrics/resnet50.json": {
-    "bytes": 2571,
-    "sha256": "e3137329b2a7b47bb18866e21dcdc5020a13b7e1bfe7e48a3ff656e8d26844a9"
   },
   "artifacts/predictions/clip/dev_seed_42.csv": {
     "bytes": 15173,
@@ -191,21 +171,9 @@
     "bytes": 30081,
     "sha256": "5ea5d363438bfcce1799386971ead612205836293a5fac49b92836a97e75b4a7"
   },
-  "artifacts/protocol.json": {
-    "bytes": 2839,
-    "sha256": "fafb986a199effcb87255a281ab77450c755cdc3a721c54cd903d2162e94853b"
-  },
-  "artifacts/results.csv": {
-    "bytes": 604,
-    "sha256": "0e72c7b710110988bf229c145a84a999aaadcc1536748dd239d8ffcea53355c4"
-  },
   "artifacts/results.json": {
     "bytes": 10954,
     "sha256": "c83c82f74de4b5cb53a0086106cbc88700c01ffd3b9b15f4f041d44167badfe1"
-  },
-  "artifacts/verification.json": {
-    "bytes": 7735,
-    "sha256": "18536d610bf9f2c8c56e35b5944e2be53880ca1b9f54afce21c642945968941e"
   },
   "baselines.py": {
     "bytes": 23735,
@@ -214,14 +182,6 @@
   "config.json": {
     "bytes": 2839,
     "sha256": "fafb986a199effcb87255a281ab77450c755cdc3a721c54cd903d2162e94853b"
-  },
-  "data/LICENSE.txt": {
-    "bytes": 9867,
-    "sha256": "5fddd697633ccc2d54daf824d7b92831a194fcb75f9abaa0513e6c988f5b31ca"
-  },
-  "data/README.md": {
-    "bytes": 3008,
-    "sha256": "c93fafaced8aca7ffbd6bb649c208bcb60d46db232db68a06c864b9938b7006e"
   },
   "data/dev.jsonl": {
     "bytes": 55143,
@@ -235,6 +195,14 @@
     "bytes": 119580,
     "sha256": "dd0d387bacd67ce4db39fcfd805a0b4b9e10fe0feaafc3b189b41c4ef2e36a16"
   },
+  "data/LICENSE.txt": {
+    "bytes": 9867,
+    "sha256": "5fddd697633ccc2d54daf824d7b92831a194fcb75f9abaa0513e6c988f5b31ca"
+  },
+  "data/README.md": {
+    "bytes": 3008,
+    "sha256": "c93fafaced8aca7ffbd6bb649c208bcb60d46db232db68a06c864b9938b7006e"
+  },
   "data/test.jsonl": {
     "bytes": 101480,
     "sha256": "b046ec2e68ea8c5c48596d95f68767ab1148159cc33ffe8272b7c18e6a176510"
@@ -247,9 +215,9 @@
     "bytes": 62944,
     "sha256": "3b6d05a30fe50e5c1a2ad3bd191e55fb6b3e3557aea54a33065f98041845675c"
   },
-  "output/presentation/hateful_memes_results_v2.pptx": {
-    "bytes": 2594013,
-    "sha256": "bf479451688a733842f5947bcbd97d4ab200cd0637d074217a4b073d16f7d3d3"
+  "README.md": {
+    "bytes": 13463,
+    "sha256": "8f4b2a2902241ec06c33d7c684e32d320d3f3e515cdc3b5a7c1df532d7a6fe65"
   },
   "report.tex": {
     "bytes": 11351,

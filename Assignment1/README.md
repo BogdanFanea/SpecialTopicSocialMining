@@ -159,7 +159,12 @@ inference mode with gradients disabled. Embeddings are saved as float32.
   GPU embedding extraction is fixed but bitwise equality across hardware/library
   versions is not promised. Reuse the caches when exact local replay matters.
 
-## Outputs
+## Included files and generated outputs
+
+The submission includes the report, runnable code, dependencies, configuration,
+selected classifier checkpoints and selection histories, per-seed predictions,
+aggregate results, inspected error analysis, and split annotations with provenance.
+Other outputs listed below are generated when the commands are run.
 
 - `artifacts/features/<encoder>/<split>.npz`: embeddings, row IDs, checkpoint and
   preprocessing metadata, input checksum, extraction device/time, truncation count.
@@ -179,7 +184,6 @@ inference mode with gradients disabled. Embeddings are saved as float32.
 - `report.tex`: self-contained, two-page report. Open it in a LaTeX editor for
   compilation and PDF preview; no external figure or bibliography files are needed.
 - `output/pdf/report.pdf`: the exported, visually checked two-page PDF.
-- `output/presentation/hateful_memes_results_v2.pptx`: the final presentation.
 
 If a local TeX installation is available, export the PDF with two passes so all
 bibliography references resolve:
