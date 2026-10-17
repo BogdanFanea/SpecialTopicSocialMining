@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.DS_Store
+artifacts/features/
+artifacts/smoke/
+*.aux
+*.log
+*.out
+data/img/
+._*
