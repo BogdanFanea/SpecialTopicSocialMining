@@ -1,0 +1,19 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "dimension": 128,
+  "gate_hidden": 128,
+  "dropout": 0.5,
+  "batch_size": 128,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "op_weights": [
+    0.1,
+    0.3,
+    1
+  ]
+}
